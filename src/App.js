@@ -31,9 +31,10 @@ function App() {
   }
   return (
     <div className="App">
-
+      <h3>React-ToDo-List</h3>
       <div className='addTask'>
         <input className='inputTask' onChange={sendTask} placeholder={"Enter Task"} />
+
         <button className='button1' onClick={sendList}>Add Task</button>
       </div>
 
