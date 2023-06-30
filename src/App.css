@@ -3,6 +3,11 @@
     flex-direction: column;
     align-items: center;
     font-family: monospace;
+
+}
+
+.heading {
+    font-family: monospace;
     color: rgb(77, 157, 231);
 }
 

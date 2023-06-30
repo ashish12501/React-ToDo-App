@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { useState } from 'react';
+import { Task } from './Task'
 
 function App() {
   const [inputList, setinputList] = useState([]);
@@ -31,21 +32,16 @@ function App() {
   }
   return (
     <div className="App">
-      <h2>React-ToDo-List</h2>
+      <h2 className='heading'>React-ToDo-List</h2>
       <div className='addTask'>
         <input className='inputTask' onChange={sendTask} placeholder={"Enter Task"} />
-
         <button className='button1' onClick={sendList}>Add Task</button>
       </div>
 
       <div className='list'>
         {inputList.map((newtask) => {
           return (
-            <div style={{ backgroundColor: newtask.status === true && "rgb(155, 245, 155)" }} className='taskNbutton'>
-              <h3 className='displaytxt' >{newtask.Taskname}</h3>
-              <button className='button3' onClick={() => taskCompleted(newtask.id)} >Completed</button>
-              <button className='button2' onClick={() => deleteTask(newtask.id)}>X</button>
-            </div>
+            <Task taskName={newtask.Taskname} id={newtask.id} status={newtask.status} deleteTask={deleteTask} taskCompleted={taskCompleted} />
           )
         })}
       </div>
