@@ -1,0 +1,109 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 5%;
+}
+
+.inputTask {
+    height: 32px;
+    border: 0;
+    background-color: rgba(203, 233, 250, 0.685);
+    border-radius: 5px;
+    width: 340px;
+    padding: 2px 5px;
+    /* color: white; */
+    font-family: monospace;
+    font-size: 1.3em;
+    border: 2px solid rgb(165, 204, 255);
+
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.taskNbutton {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 40px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+
+.button1 {
+    height: 35px;
+    width: 85px;
+    background-color: rgb(90, 168, 240);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    margin: 0 10px;
+    font-family: monospace;
+    font-size: 1.1em;
+}
+
+.button2 {
+    height: 25px;
+    width: 70px;
+    background-color: rgb(240, 95, 11);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    margin: 0 5px;
+
+}
+
+.button3 {
+    height: 25px;
+    width: 170px;
+    background-color: rgb(3, 163, 11);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.displaytxt {
+    width: 150%;
+}
+
+/* .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+} */
